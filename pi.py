@@ -4,4 +4,9 @@ text = """
 """
 
 # TODO
+result = ""
 
+for word in text.split():
+    result += str(sum(1 for char in word if char.isalpha()))
+    
+print(result)
