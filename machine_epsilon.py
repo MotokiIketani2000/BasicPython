@@ -1,7 +1,7 @@
 # TODO
 epsilon = 1.0
-while 1.0 + epsilon > 1.0:
-    epsilon_last = epsilon
+
+while epsilon + 1 != 1 :
     epsilon /= 2
-   
-print(f"マシンイプシロン{epsilon}")
+
+print(epsilon*2)
