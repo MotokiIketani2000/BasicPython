@@ -6,11 +6,18 @@ b = input("b の値を入力: ")
 s = int(a)
 m = int(b)
 
-while m != 0:
-    temp = s % m
-    s = m
-    m = temp
+def gcd_euclid(s, m):
     
-print(s)
-    
+    while m != 0:
+        s, m = m, s % m
+        
+    return abs(s)
+
+
+def independent(s, m):
+    return gcd_euclid(s, m) == 1
+
+print(gcd_euclid(s,m))
+print(independent(s,m))
+
 
